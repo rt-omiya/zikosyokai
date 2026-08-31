@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="デザイナー・大宮 烈の自己紹介サイトです。">
+  <title>大宮 烈｜自己紹介</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ページの先頭へ"><span class="brand-mark">O</span><span>OMIYA</span></a>
+    <nav aria-label="ページ内ナビゲーション">
+      <a href="#intro"><span>01</span> Intro</a>
+      <a href="#profile"><span>02</span> Profile</a>
+      <a href="#gallery"><span>03</span> Gallery</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="intro" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, my name is</p>
+        <h1 id="hero-title">大宮です<span class="dot">。</span></h1>
+        <p class="hero-en" aria-hidden="true">OMIYA<br>RETSU</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
+        <img src="images/gallery-02.png" alt="">
+        <span class="art-caption">DESIGNER / MUSIC / CAT</span>
+      </div>
+      <a class="scroll-link" href="#profile">Scroll to profile <span>↓</span></a>
+    </section>
+
+    <section class="section profile-section" id="profile" aria-labelledby="profile-title">
+      <div class="section-heading"><p class="section-number">01</p><div><h2 id="profile-title">Profile</h2><p>プロフィール</p></div></div>
+      <div class="profile-grid">
+        <p class="lead">好きなものを、<br>好きなままに。</p>
+        <div class="table-wrap"><table><tbody>
+          <tr><th scope="row">名前</th><td>大宮 烈</td></tr>
+          <tr><th scope="row">職種</th><td>デザイナー</td></tr>
+          <tr><th scope="row">趣味</th><td>音楽</td></tr>
+          <tr><th scope="row">好きなもの</th><td>猫</td></tr>
+          <tr><th scope="row">最近ハマっていること</th><td>猫にベランダを見せる</td></tr>
+        </tbody></table></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading"><p class="section-number">02</p><div><h2 id="gallery-title">Gallery</h2><p>最近のドローイング</p></div></div>
+      <div class="slider">
+        <input class="slider-radio" type="radio" name="gallery" id="slide-1" checked>
+        <input class="slider-radio" type="radio" name="gallery" id="slide-2">
+        <input class="slider-radio" type="radio" name="gallery" id="slide-3">
+        <div class="slides" aria-live="polite">
+          <figure class="slide slide-1"><div class="slide-image"><img src="images/gallery-01.png" alt="赤い線で描かれた鳥のイラスト"></div><figcaption><span>01</span>BIRD</figcaption></figure>
+          <figure class="slide slide-2"><div class="slide-image"><img src="images/gallery-02.png" alt="赤い線で描かれた猫のイラスト"></div><figcaption><span>02</span>CAT</figcaption></figure>
+          <figure class="slide slide-3"><div class="slide-image"><img src="images/gallery-03.png" alt="赤い線で描かれた丸いキャラクターのイラスト"></div><figcaption><span>03</span>FRIEND</figcaption></figure>
+        </div>
+        <div class="slider-controls" aria-label="画像を切り替える">
+          <label for="slide-1" aria-label="1枚目を表示"><span>01</span></label>
+          <label for="slide-2" aria-label="2枚目を表示"><span>02</span></label>
+          <label for="slide-3" aria-label="3枚目を表示"><span>03</span></label>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><a href="#top">Back to top <span>↑</span></a><p>© OMIYA RETSU</p></footer>
+</body>
+</html>
